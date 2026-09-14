@@ -47,6 +47,7 @@ from hermes_cli.doctor_tools import (
     _check_terminal_backend,
     _check_tool_availability,
 )
+from hermes_cli.doctor_knowledge import _check_obsidian_vault
 from hermes_cli.doctor_state import (
     _check_directory_structure,
     _check_memory_provider,
@@ -118,7 +119,7 @@ DOCTOR_CHECKS = (
     ('External Tools', _check_git_and_rg), (None, _check_terminal_backend), (None, _check_node_and_browser),
     (None, _check_npm_audit), ('API Connectivity', _check_api_connectivity),
     ('Tool Availability', _check_tool_availability), ('Skills Hub', _check_skills_hub),
-    ('Memory Provider', _check_memory_provider), (None, _check_profiles),
+    ('Project Knowledge Base', _check_obsidian_vault), ('Memory Provider', _check_memory_provider), (None, _check_profiles),
 )
 
 
